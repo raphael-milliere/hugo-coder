@@ -3,12 +3,12 @@
     <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
       {{ .Site.Title }}
     </a>
-    {{ if or .Site.Menus.main .Site.IsMultiLingual }}
+    <!-- {{ if or .Site.Menus.main .Site.IsMultiLingual }}
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
         <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
+      </label> -->
+      <!-- <ul class="navigation-list">
         {{ with .Site.Menus.main}}
           {{ range sort . }}
             <li class="navigation-item">
@@ -33,7 +33,7 @@
             {{ end }}
           {{ end }}
         {{ end }}
-      </ul>
-    {{ end }}
+      </ul> -->
+    <!-- {{ end }} -->
   </section>
 </nav>
