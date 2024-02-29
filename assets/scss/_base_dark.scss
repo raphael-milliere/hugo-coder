@@ -78,6 +78,49 @@
   table tr th:last-child {
     border-right: 0;
   }
+
+  .citation-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .textarea-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .textarea-container textarea {
+    width: calc(100% - 20px); /* Adjust width to prevent overlap with button */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: $cite-bg-color-dark;
+    color: $cite-fg-color-dark;
+    border: 1px solid $cite-border-color-dark;
+    resize: none;
+    font-family: monospace;
+  }
+
+  .textarea-container button {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    background-color: $cite-button-bg-color-dark;
+    color: $cite-button-fg-color-dark;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .textarea-container button:hover {
+    background-color: $button-hover-bg-color-dark;
+  }
+
 }
 
 body.colorscheme-dark {
@@ -89,3 +132,42 @@ body.colorscheme-auto {
     @include base_dark();
   }
 }
+
+
+
+// OLD VERSION
+
+// .citation-box {
+//   position: relative;
+//   margin-bottom: 20px;
+// }
+
+// .citation-box textarea {
+//   width: 100%;
+//   height: 50px;
+//   padding: 10px;
+//   margin-top: 5px;
+//   margin-bottom: 10px;
+//   box-sizing: border-box;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   background-color: #212328;
+//   color: #ececec;
+//   resize: none;
+//   font-family: monospace;
+// }
+
+// .citation-box button {
+//   padding: 10px 15px;
+//   font-size: 0.9em;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   background-color: #3d4454;
+//   color: white;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
+// }
+
+// .citation-box button:hover {
+//   background-color: #1d3d5f;
+// }

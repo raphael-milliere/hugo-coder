@@ -279,3 +279,53 @@ figure {
 .fas {
   font-weight: 900;
 }
+
+.center class
+
+.center {
+  text-align: center;
+}
+
+/* Light Mode Styling for Citation Information at the End of Blog Posts */
+
+.citation-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.textarea-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.textarea-container textarea {
+  width: calc(100% - 20px); /* Adjust width to prevent overlap with button */
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid $cite-border-color; 
+  border-radius: 4px;
+  background-color: $cite-bg-color; 
+  color: $cite-fg-color; 
+  resize: none;
+  font-family: monospace;
+}
+
+.textarea-container button {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 4px;
+  background-color: $cite-button-bg-color; /* Lighter button background */
+  color: $cite-button-fg-color; /* Darker button text for contrast */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.textarea-container button:hover {
+  background-color: $button-hover-bg-color; /* Slightly darker on hover for interactive feedback */
+}

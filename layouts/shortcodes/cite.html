@@ -1,0 +1,45 @@
+<!-- citation-box.html -->
+<div class="citation-box">
+  <h6>If you would like to cite this post in an academic context, you can use the following BibTeX snippet:</h6>
+  <div class="textarea-container">
+    <textarea id="citeText" readonly>@misc{{ "{" }}{{ .Get "key" }}, 
+      author = {Millière, Raphaël},
+      title = {{ "{" }}"{{ .Get "title" }}"{{ "}" }}},
+      url = {{ "{" }}{{ .Get "url" }}{{ "}" }},
+      year = {{ "{" }}{{ .Get "year" }}{{ "}" }}
+    }</textarea>
+    <button onclick="copyToClipboard('citeText')" title="Copy to clipboard">
+        <i class="fa fa-clone"></i>
+    </button>
+  </div>
+
+<script>
+async function copyToClipboard(elementId) {
+  var copyText = document.getElementById(elementId);
+  try {
+    await navigator.clipboard.writeText(copyText.value);
+    // Optionally, provide feedback to the user that the text was copied.
+    alert("BibTeX snippet copied to clipboard."); // Or use a more subtle approach, like changing the button text temporarily.
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+}
+</script>
+<script>
+  function adjustTextareaHeight(textareaId) {
+    var textarea = document.getElementById(textareaId);
+    textarea.setAttribute('style', 'height:' + (textarea.scrollHeight) + 'px;overflow-y:hidden;');
+    textarea.addEventListener("input", OnInput, false);
+  }
+  
+  function OnInput() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+  }
+  
+  // Call this function with the correct ID
+  window.onload = function() {
+    adjustTextareaHeight('citeText');
+  }
+  </script>
+  
