@@ -34,6 +34,9 @@ $cite-border-color: #999 !default;
 $cite-button-bg-color: #e2e6ea !default;
 $cite-button-fg-color: #333 !default;
 $button-hover-bg-color: #cad2d8 !default;
+$summary-bg-color: #f0f0f0 !default;
+$summary-border-color: #1976d2 !default;
+$summary-color: $fg-color !default;
 
 // Dark colors
 $bg-color-dark: #2e3138 !default;
@@ -48,6 +51,9 @@ $cite-border-color-dark: #ccc !default;
 $cite-button-bg-color-dark: #3d4454 !default;
 $cite-button-fg-color-dark: #ececec !default;
 $button-hover-bg-color-dark: #1d3d5f !default;
+$summary-bg-color-dark: #383c44 !default;
+$summary-border-color-dark: #b29a5b !default;
+$summary-color-dark: $fg-color-dark !default;
 
 // Notice colors
 $fg-color-notice-note-icon: #5e35b1 !default;

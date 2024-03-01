@@ -329,3 +329,17 @@ figure {
 .textarea-container button:hover {
   background-color: $button-hover-bg-color; /* Slightly darker on hover for interactive feedback */
 }
+
+/* Base styles for the summary box */
+.summary-box {
+  margin: 20px 0;
+  padding: 20px;
+  font-style: italic;
+  background-color: $summary-bg-color;
+  border-left: 5px solid $summary-border-color;
+  color: $summary-color;
+}
+
+.summary-box p {
+  margin: 0;
+}

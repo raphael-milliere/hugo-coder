@@ -121,6 +121,20 @@
     background-color: $button-hover-bg-color-dark;
   }
 
+  /* Base styles for the summary box */
+  .summary-box {
+    margin: 20px 0;
+    padding: 20px;
+    font-style: italic;
+    background-color: $summary-bg-color-dark;
+    border-left: 5px solid $summary-border-color-dark;
+    color: $summary-color-dark;
+  }
+
+  .summary-box p {
+    margin: 0;
+  }
+
 }
 
 body.colorscheme-dark {
